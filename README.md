@@ -18,7 +18,7 @@ Alternatively download a [release](https://github.com/BenWhitehead/angular-anima
 
 Example
 =======
-
+#### LESS
 ```less
 @import 'bower_components/angular-animate-less-mixins/dist/less/angular-animate-less-mixins';
 .testing-opacity {
@@ -43,7 +43,7 @@ Example
   }
 }
 ```
-
+#### HTML
 ```html
 <div class="testing-opacity">
   <div>
@@ -72,7 +72,7 @@ Example
   </div>
 </div>
 ```
-
+#### JavaScript
 ```js
 'use strict';
 
