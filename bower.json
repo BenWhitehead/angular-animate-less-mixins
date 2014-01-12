@@ -1,0 +1,11 @@
+{
+  "name": "angular-animate-less-mixins",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.2.0",
+    "angular-animate": "~1.2.0",
+    "bootstrap": "~3.0.3"
+  },
+  "devDependencies": {
+  }
+}

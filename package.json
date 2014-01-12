@@ -1,0 +1,23 @@
+{
+  "name": "angular-animate-less-mixins",
+  "version": "0.0.1",
+  "description": "As set of less mixins for angular's animation support built on Bootstrap's css animation mixins.",
+  "repository": "",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-concurrent": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-less": "~0.8.2",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-newer": "~0.5.4",
+    "grunt-rev": "~0.1.0",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
