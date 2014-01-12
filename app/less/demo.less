@@ -7,6 +7,7 @@ body {
 .angular-testing {
   .testing {
     .transition(all linear 1s);
+    background-color: darkgray;
   }
   .testing-opacity {
     .testing-if {
@@ -23,6 +24,33 @@ body {
     .testing-show {
       .testing {
         .ng-animate-hide-opacity(0, 1);
+      }
+    }
+  }
+  .testing-perspective {
+    .testing-if {
+      .testing {
+        .ng-animate-if-perspective(0, 100px);
+        > div {
+          .rotateX(45deg);
+        }
+      }
+    }
+    .testing-class {
+      .testing {
+        .ng-animate-class-perspective(0, 100px);
+        > div {
+          .rotateX(45deg);
+        }
+      }
+    }
+    .testing-hide,
+    .testing-show {
+      .testing {
+        .ng-animate-hide-perspective(0, 100px);
+        > div {
+          .rotateX(45deg);
+        }
       }
     }
   }

@@ -41,6 +41,38 @@
       <button class="btn" type="button" ng-click="toggleAll(testing.opacity)">Toggle All</button>
     </div>
   </div>
+  <div class="row testing-perspective">
+    <div class="col-xs-2">
+      <h3>perspective</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.perspective.if"/>
+        <div class="testing" ng-if="testing.perspective.if"><div>Testing if</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.perspective.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.perspective.class }"><div>Testing class</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.perspective.show"/>
+        <div class="testing" ng-show="testing.perspective.show"><div>Testing show</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.perspective.hide"/>
+        <div class="testing" ng-hide="testing.perspective.hide"><div>Testing hide</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.perspective)">Toggle All</button>
+    </div>
+  </div>
   <div class="row testing-rotate">
     <div class="col-xs-2">
       <h3>rotate</h3>
