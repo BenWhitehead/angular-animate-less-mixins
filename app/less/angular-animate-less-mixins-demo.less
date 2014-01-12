@@ -99,6 +99,7 @@ body {
     }
   }
   .testing-skew {
+    min-height: 75px;
     .testing-if {
       .testing {
         .ng-animate-if-skew(0deg, 0deg, -30deg, -20deg);
@@ -113,6 +114,24 @@ body {
     .testing-show {
       .testing {
         .ng-animate-hide-skew(0deg, 0deg, -30deg, -20deg);
+      }
+    }
+  }
+  .testing-translate {
+    .testing-if {
+      .testing {
+        .ng-animate-if-translate(0, 0, 10px, 20px);
+      }
+    }
+    .testing-class {
+      .testing {
+        .ng-animate-class-translate(0, 0, 10px, 20px);
+      }
+    }
+    .testing-hide,
+    .testing-show {
+      .testing {
+        .ng-animate-hide-translate(0, 0, 10px, 20px);
       }
     }
   }

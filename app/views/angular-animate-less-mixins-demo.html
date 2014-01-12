@@ -198,4 +198,36 @@
       <button class="btn" type="button" ng-click="toggleAll(testing.skew)">Toggle All</button>
     </div>
   </div>
+  <div class="row testing-translate">
+    <div class="col-xs-2">
+      <h3>translate</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.translate.if"/>
+        <div class="testing" ng-if="testing.translate.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.translate.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.translate.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.translate.show"/>
+        <div class="testing" ng-show="testing.translate.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.translate.hide"/>
+        <div class="testing" ng-hide="testing.translate.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.translate)">Toggle All</button>
+    </div>
+  </div>
 </div>
