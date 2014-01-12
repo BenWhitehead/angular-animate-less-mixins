@@ -1,11 +1,19 @@
 {
   "name": "angular-animate-less-mixins",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "authors": [
+    "Ben Whitehead <benjamin.r.whitehead@gmail.com>"
+  ],
+  "description": "As set of less mixins for angular's animation support built on Bootstrap's css animation mixins.",
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
   "dependencies": {
     "angular": "~1.2.0",
     "angular-animate": "~1.2.0",
     "bootstrap": "~3.0.3"
-  },
-  "devDependencies": {
   }
 }

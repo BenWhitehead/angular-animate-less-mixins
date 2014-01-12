@@ -1,8 +1,24 @@
 {
   "name": "angular-animate-less-mixins",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "As set of less mixins for angular's animation support built on Bootstrap's css animation mixins.",
-  "repository": "",
+  "keywords": ["angular", "angular-animate", "bootstrap", "css", "grid"],
+  "main": "Gruntfile.js",
+  "author": "BenWhitehead",
+  "homepage": "https://github.com/BenWhitehead/angular-animate-less-mixins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenWhitehead/angular-animate-less-mixins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BenWhitehead/angular-animate-less-mixins/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",

@@ -1,7 +1,13 @@
+/*!
+ * Angular Animate LESS Mixins v0.1.0 by BenWhitehead
+ * Copyright 2014 BenWhitehead
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */
+
 'use strict';
 
 angular.module('angularAnimateLessMixins', ['ngAnimate'])
-  .controller('AngularAnimateLessMixinsCtrl', ['$scope', '$log', function($scope, $log) {
+  .controller('AngularAnimateLessMixinsCtrl', ['$scope', function($scope) {
     var init = function(obj) {
       obj.if = false;
       obj.class = false;
