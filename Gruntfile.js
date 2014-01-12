@@ -26,10 +26,10 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-//      less: {
-//        files: ['<%= yeoman.app %>/less/{,*/}*.less'],
-//        tasks: ['less:server']
-//      },
+      less: {
+        files: ['<%= yeoman.app %>/less/{,*/}*.less'],
+        tasks: ['less:server']
+      },
       gruntfile: {
         files: ['Gruntfile.js']
       },
@@ -72,7 +72,7 @@ module.exports = function (grunt) {
     less: {
       server: {
         files: {
-          '.tmp/css/angular-animate-less-mixins-demo.css': '<%= yeoman.app %>/less/angular-animate-less-mixins-demo.less'
+          '.tmp/css/demo.css': '<%= yeoman.app %>/less/demo.less'
         }
       },
       dist: {
@@ -81,7 +81,7 @@ module.exports = function (grunt) {
           report: 'gzip'
         },
         files: {
-          '.tmp/css/angular-animate-less-mixins-demo.css': '<%= yeoman.app %>/less/angular-animate-less-mixins-demo.less'
+          '.tmp/css/demo.css': '<%= yeoman.app %>/less/demo.less'
         }
       }
     },

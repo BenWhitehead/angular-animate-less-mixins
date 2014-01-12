@@ -33,5 +33,15 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
       obj.show = !obj.show;
       obj.hide = !obj.hide;
     };
+    $scope.toggleEverything = function() {
+      $scope.toggleAll($scope.testing.opacity);
+      $scope.toggleAll($scope.testing.rotate);
+      $scope.toggleAll($scope.testing.rotateX);
+      $scope.toggleAll($scope.testing.rotateY);
+      $scope.toggleAll($scope.testing.scale);
+      $scope.toggleAll($scope.testing.skew);
+      $scope.toggleAll($scope.testing.translate);
+      $scope.toggleAll($scope.testing.translate3d);
+    };
   }])
 ;
