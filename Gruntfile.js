@@ -26,10 +26,10 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-      less: {
-        files: ['<%= yeoman.app %>/less/{,*/}*.less'],
-        tasks: ['less:server']
-      },
+//      less: {
+//        files: ['<%= yeoman.app %>/less/{,*/}*.less'],
+//        tasks: ['less:server']
+//      },
       gruntfile: {
         files: ['Gruntfile.js']
       },

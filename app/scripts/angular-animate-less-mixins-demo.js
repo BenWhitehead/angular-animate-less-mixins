@@ -15,7 +15,8 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
       rotateX: {},
       scale: {},
       skew: {},
-      translate: {}
+      translate: {},
+      translate3d: {}
     };
     init($scope.testing.opacity);
     init($scope.testing.rotate);
@@ -24,6 +25,7 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
     init($scope.testing.scale);
     init($scope.testing.skew);
     init($scope.testing.translate);
+    init($scope.testing.translate3d);
 
     $scope.toggleAll = function(obj) {
       obj.if = !obj.if;
