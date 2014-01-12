@@ -9,6 +9,7 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
       obj.hide = false;
     };
     $scope.testing = {
+      animation: {},
       opacity: {},
       perspective: {},
       rotate: {},
@@ -19,6 +20,7 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
       translate: {},
       translate3d: {}
     };
+    init($scope.testing.animation);
     init($scope.testing.opacity);
     init($scope.testing.perspective);
     init($scope.testing.rotate);
@@ -36,6 +38,7 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
       obj.hide = !obj.hide;
     };
     $scope.toggleEverything = function() {
+      $scope.toggleAll($scope.testing.animation);
       $scope.toggleAll($scope.testing.opacity);
       $scope.toggleAll($scope.testing.perspective);
       $scope.toggleAll($scope.testing.rotate);

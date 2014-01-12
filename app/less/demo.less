@@ -4,10 +4,45 @@ body {
   background-color: #c0c0c0;
 }
 
+@-webkit-keyframes left-to-right {
+  from { margin-left: 0px }
+  to   { margin-left: 40px }
+}
+@keyframes left-to-right {
+  from { margin-left: 0px }
+  to   { margin-left: 40px }
+}
+@-webkit-keyframes right-to-left {
+  from { margin-left: 40px }
+  to   { margin-left: 0px }
+}
+@keyframes right-to-left {
+  from { margin-left: 40px }
+  to   { margin-left: 0px }
+}
+
 .angular-testing {
   .testing {
     .transition(all linear 1s);
     background-color: darkgray;
+  }
+  .testing-animation {
+    .testing-if {
+      .testing {
+        .ng-animate-if-animation(left-to-right 2s linear infinite; right-to-left 2s linear infinite);
+      }
+    }
+    .testing-class {
+      .testing {
+        .ng-animate-class-animation(left-to-right 2s linear infinite; right-to-left 2s linear infinite);
+      }
+    }
+    .testing-hide,
+    .testing-show {
+      .testing {
+        .ng-animate-hide-animation(left-to-right 2s linear infinite; right-to-left 2s linear infinite);
+      }
+    }
   }
   .testing-opacity {
     .testing-if {

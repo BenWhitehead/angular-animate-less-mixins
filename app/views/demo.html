@@ -9,6 +9,38 @@
       <button class="btn" type="button" ng-click="toggleEverything()">Toggle Everything</button>
     </div>
   </div>
+  <div class="row testing-animation">
+    <div class="col-xs-2">
+      <h3>animation</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.animation.if"/>
+        <div class="testing" ng-if="testing.animation.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.animation.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.animation.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.animation.show"/>
+        <div class="testing" ng-show="testing.animation.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.animation.hide"/>
+        <div class="testing" ng-hide="testing.animation.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.animation)">Toggle All</button>
+    </div>
+  </div>
   <div class="row testing-opacity">
     <div class="col-xs-2">
       <h3>opacity</h3>
