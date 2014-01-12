@@ -1,4 +1,9 @@
 @import "angular-animate-less-mixins";
+
+body {
+  background-color: #c0c0c0;
+}
+
 .angular-testing {
   .testing {
     .transition(all linear 1s);
@@ -90,6 +95,24 @@
     .testing-show {
       .testing {
         .ng-animate-hide-scale(0.5, 1);
+      }
+    }
+  }
+  .testing-skew {
+    .testing-if {
+      .testing {
+        .ng-animate-if-skew(0deg, 0deg, -30deg, -20deg);
+      }
+    }
+    .testing-class {
+      .testing {
+        .ng-animate-class-skew(0deg, 0deg, -30deg, -20deg);
+      }
+    }
+    .testing-hide,
+    .testing-show {
+      .testing {
+        .ng-animate-hide-skew(0deg, 0deg, -30deg, -20deg);
       }
     }
   }
