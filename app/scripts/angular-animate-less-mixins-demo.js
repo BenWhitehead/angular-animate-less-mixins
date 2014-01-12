@@ -26,6 +26,12 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
         class: false,
         show: false,
         hide: false
+      },
+      scale: {
+        if: false,
+        class: false,
+        show: false,
+        hide: false
       }
     };
     $scope.toggleAll = function(obj) {

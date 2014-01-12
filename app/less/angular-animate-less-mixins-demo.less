@@ -1,11 +1,7 @@
 @import "angular-animate-less-mixins";
 .angular-testing {
   .testing {
-    -webkit-transition: all linear 1s;
-    -moz-transition:    all linear 1s;
-    -ms-transition:     all linear 1s;
-    -o-transition:      all linear 1s;
-    transition:         all linear 1s;
+    .transition(all linear 1s);
   }
   .testing-opacity {
     .testing-if {
@@ -76,6 +72,24 @@
     .testing-show {
       .testing {
         .ng-animate-hide-rotateX(0deg, 180deg);
+      }
+    }
+  }
+  .testing-scale {
+    .testing-if {
+      .testing {
+        .ng-animate-if-scale(0.5, 1);
+      }
+    }
+    .testing-class {
+      .testing {
+        .ng-animate-class-scale(0.5, 1);
+      }
+    }
+    .testing-hide,
+    .testing-show {
+      .testing {
+        .ng-animate-hide-scale(0.5, 1);
       }
     }
   }
