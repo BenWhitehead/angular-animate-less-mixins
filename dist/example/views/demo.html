@@ -1,0 +1,338 @@
+<!--
+ -- Angular Animate LESS Mixins v0.1.0 by BenWhitehead
+ -- Copyright 2014 BenWhitehead
+ -- Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ -->
+
+<!--suppress HtmlFormInputWithoutLabel -->
+<div class="angular-testing">
+  <div class="row heading">
+    <div class="col-xs-2 col-xs-offset-2"><h3>ng-if</h3></div>
+    <div class="col-xs-2"><h3>ng-class</h3></div>
+    <div class="col-xs-2"><h3>ng-show</h3></div>
+    <div class="col-xs-2"><h3>ng-hide</h3></div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleEverything()">Toggle Everything</button>
+    </div>
+  </div>
+  <div class="row testing-animation">
+    <div class="col-xs-2">
+      <h3>animation</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.animation.if"/>
+        <div class="testing" ng-if="testing.animation.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.animation.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.animation.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.animation.show"/>
+        <div class="testing" ng-show="testing.animation.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.animation.hide"/>
+        <div class="testing" ng-hide="testing.animation.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.animation)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-opacity">
+    <div class="col-xs-2">
+      <h3>opacity</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.opacity.if"/>
+        <div class="testing" ng-if="testing.opacity.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.opacity.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.opacity.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.opacity.show"/>
+        <div class="testing" ng-show="testing.opacity.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.opacity.hide"/>
+        <div class="testing" ng-hide="testing.opacity.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.opacity)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-perspective">
+    <div class="col-xs-2">
+      <h3>perspective</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.perspective.if"/>
+        <div class="testing" ng-if="testing.perspective.if"><div>Testing if</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.perspective.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.perspective.class }"><div>Testing class</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.perspective.show"/>
+        <div class="testing" ng-show="testing.perspective.show"><div>Testing show</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.perspective.hide"/>
+        <div class="testing" ng-hide="testing.perspective.hide"><div>Testing hide</div></div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.perspective)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-rotate">
+    <div class="col-xs-2">
+      <h3>rotate</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.rotate.if"/>
+        <div class="testing" ng-if="testing.rotate.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.rotate.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.rotate.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.rotate.show"/>
+        <div class="testing" ng-show="testing.rotate.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.rotate.hide"/>
+        <div class="testing" ng-hide="testing.rotate.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.rotate)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-rotateY">
+    <div class="col-xs-2">
+      <h3>rotateY</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.rotateY.if"/>
+        <div class="testing" ng-if="testing.rotateY.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.rotateY.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.rotateY.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.rotateY.show"/>
+        <div class="testing" ng-show="testing.rotateY.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.rotateY.hide"/>
+        <div class="testing" ng-hide="testing.rotateY.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.rotateY)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-rotateX">
+    <div class="col-xs-2">
+      <h3>rotateX</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.rotateX.if"/>
+        <div class="testing" ng-if="testing.rotateX.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.rotateX.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.rotateX.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.rotateX.show"/>
+        <div class="testing" ng-show="testing.rotateX.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.rotateX.hide"/>
+        <div class="testing" ng-hide="testing.rotateX.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.rotateX)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-scale">
+    <div class="col-xs-2">
+      <h3>scale</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.scale.if"/>
+        <div class="testing" ng-if="testing.scale.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.scale.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.scale.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.scale.show"/>
+        <div class="testing" ng-show="testing.scale.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.scale.hide"/>
+        <div class="testing" ng-hide="testing.scale.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.scale)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-skew">
+    <div class="col-xs-2">
+      <h3>skew</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.skew.if"/>
+        <div class="testing" ng-if="testing.skew.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.skew.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.skew.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.skew.show"/>
+        <div class="testing" ng-show="testing.skew.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.skew.hide"/>
+        <div class="testing" ng-hide="testing.skew.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.skew)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-translate">
+    <div class="col-xs-2">
+      <h3>translate</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.translate.if"/>
+        <div class="testing" ng-if="testing.translate.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.translate.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.translate.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.translate.show"/>
+        <div class="testing" ng-show="testing.translate.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.translate.hide"/>
+        <div class="testing" ng-hide="testing.translate.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.translate)">Toggle All</button>
+    </div>
+  </div>
+  <div class="row testing-translate3d">
+    <div class="col-xs-2">
+      <h3>translate3d</h3>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-if">
+        <input type="checkbox" ng-model="testing.translate3d.if"/>
+        <div class="testing" ng-if="testing.translate3d.if">Testing if</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-class">
+        <input type="checkbox" ng-model="testing.translate3d.class"/>
+        <div class="testing" ng-class="{ 'new-class' : testing.translate3d.class }">Testing class</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-show">
+        <input type="checkbox" ng-model="testing.translate3d.show"/>
+        <div class="testing" ng-show="testing.translate3d.show">Testing show</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="testing-hide">
+        <input type="checkbox" ng-model="testing.translate3d.hide"/>
+        <div class="testing" ng-hide="testing.translate3d.hide">Testing hide</div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <button class="btn" type="button" ng-click="toggleAll(testing.translate3d)">Toggle All</button>
+    </div>
+  </div>
+</div>

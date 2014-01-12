@@ -81,7 +81,7 @@ module.exports = function (grunt) {
           report: 'gzip'
         },
         files: {
-          '.tmp/css/demo.css': '<%= yeoman.app %>/less/demo.less'
+          '<%= yeoman.dist %>/example/css/demo.css': '<%= yeoman.app %>/less/demo.less'
         }
       }
     },
@@ -107,9 +107,7 @@ module.exports = function (grunt) {
         files: {
           src: [
             '<%= yeoman.dist %>/scripts/{,*/}*.js',
-            '<%= yeoman.dist %>/styles/{,*/}*.css',
-            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-            '<%= yeoman.dist %>/styles/fonts/*'
+            '<%= yeoman.dist %>/styles/{,*/}*.css'
           ]
         }
       }
@@ -118,32 +116,35 @@ module.exports = function (grunt) {
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.app %>',
-          dest: '<%= yeoman.dist %>',
-          src: [
-            '*.{ico,png,txt}',
-            'bower_components/**/*',
-            'images/{,*/}*.{webp}',
-            'fonts/*'
-          ]
-        }, {
-          expand: true,
-          cwd: '.tmp/images',
-          dest: '<%= yeoman.dist %>/images',
-          src: [
-            'generated/*'
-          ]
-        }]
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= yeoman.app %>',
+            dest: '<%= yeoman.dist %>/example',
+            src: [
+              'scripts/{,*/}*.js',
+              '{,*/}*.html'
+            ]
+          },
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= yeoman.app %>',
+            dest: '<%= yeoman.dist %>',
+            src: [
+              'less/{,*/}*.less',
+              '!less/demo.less'
+            ]
+          }
+        ]
       }
     }
   });
 
   grunt.registerTask('serve', function(target) {
     if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
+      return grunt.task.run(['dist', 'connect:dist:keepalive']);
     }
 
     grunt.task.run([
@@ -159,7 +160,7 @@ module.exports = function (grunt) {
     grunt.task.run(['serve']);
   });
 
-  grunt.registerTask('build', [
+  grunt.registerTask('dist', [
     'clean:dist',
     'less:dist',
     'copy:dist',
@@ -167,6 +168,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'build'
+    'dist'
   ]);
 };

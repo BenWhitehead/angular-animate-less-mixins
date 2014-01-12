@@ -1,0 +1,53 @@
+/*!
+ * Angular Animate LESS Mixins v0.1.0 by BenWhitehead
+ * Copyright 2014 BenWhitehead
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */
+@import "../bower_components/bootstrap/less/mixins";
+
+.ng-animate-if-perspective-origin(@from; @to) {
+  .perspective-origin(@to);
+  &.ng-enter {
+    .perspective-origin(@from);
+  }
+  &.ng-enter-active {
+    .perspective-origin(@to);
+  }
+  &.ng-leave {
+    .perspective-origin(@to);
+  }
+  &.ng-leave-active {
+    .perspective-origin(@from);
+  }
+}
+
+.ng-animate-class-perspective-origin(@from; @to) {
+  .perspective-origin(@from);
+  &.new-class {
+    .perspective-origin(@to);
+    &, &.new-class-add.new-class-add-active {
+      .perspective-origin(@to);
+    }
+    &.new-class-remove {
+      &.new-class-remote-active {
+        .perspective-origin(@from);
+      }
+    }
+  }
+}
+
+.ng-animate-hide-perspective-origin(@from; @to) {
+  .perspective-origin(@to);
+  &.ng-hide {
+    .perspective-origin(@from);
+    &.ng-hide-add,
+    &.ng-hide-remove {
+      // IMPORTANT, to override the `display: none !important;` set by ng-hide
+      display: block !important;
+    }
+  }
+}
+
+.ng-animate-show-perspective-origin(@from; @to) {
+  .ng-animate-hide-perspective-origin(@from, @to);
+}

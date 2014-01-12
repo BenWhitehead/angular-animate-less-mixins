@@ -1,0 +1,53 @@
+/*!
+ * Angular Animate LESS Mixins v0.1.0 by BenWhitehead
+ * Copyright 2014 BenWhitehead
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */
+@import "../bower_components/bootstrap/less/mixins";
+
+.ng-animate-if-rotate(@fromDeg; @toDeg) {
+  .rotate(@toDeg);
+  &.ng-enter {
+    .rotate(@fromDeg);
+  }
+  &.ng-enter-active {
+    .rotate(@toDeg);
+  }
+  &.ng-leave {
+    .rotate(@toDeg);
+  }
+  &.ng-leave-active {
+    .rotate(@fromDeg);
+  }
+}
+
+.ng-animate-class-rotate(@fromDeg; @toDeg) {
+  .rotate(@fromDeg);
+  &.new-class {
+    .rotate(@toDeg);
+    &, &.new-class-add.new-class-add-active {
+      .rotate(@toDeg);
+    }
+    &.new-class-remove {
+      &.new-class-remote-active {
+        .rotate(@fromDeg);
+      }
+    }
+  }
+}
+
+.ng-animate-hide-rotate(@fromDeg; @toDeg) {
+  .rotate(@toDeg);
+  &.ng-hide {
+    .rotate(@fromDeg);
+    &.ng-hide-add,
+    &.ng-hide-remove {
+      // IMPORTANT, to override the `display: none !important;` set by ng-hide
+      display: block !important;
+    }
+  }
+}
+
+.ng-animate-show-rotate(@fromDeg; @toDeg) {
+  .ng-animate-hide-rotate(@fromDeg; @toDeg);
+}
