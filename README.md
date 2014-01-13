@@ -20,6 +20,7 @@ Example
 =======
 #### LESS
 ```less
+@import "bower_components/bootstrap/less/mixins";
 @import 'bower_components/angular-animate-less-mixins/dist/less/angular-animate-less-mixins';
 .testing-opacity {
   .testing {
