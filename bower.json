@@ -4,6 +4,7 @@
   "authors": [
     "Ben Whitehead <benjamin.r.whitehead@gmail.com>"
   ],
+  "main": "./dist/less/angular-animate-less-mixins.less",
   "description": "As set of less mixins for angular's animation support built on Bootstrap's css animation mixins.",
   "license": "Apache-2.0",
   "ignore": [
