@@ -3,6 +3,9 @@ Angular Animate LESS Mixins
 
 As set of LESS mixins for angular's animation support built on Bootstrap's css animation mixins.
 
+## Project Status
+I am no longer working on projects which are using Angular for the UI.  If you are interested in contributing fixes or making updates to the project feel free to open an issue and we can get in touch.
+
 Motivation
 ==========
 To have a set of LESS Mixins to make it easier to create the classes necessary to leverage angular's animation support.
