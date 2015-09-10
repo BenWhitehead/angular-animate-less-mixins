@@ -92,3 +92,9 @@ angular.module('angularAnimateLessMixins', ['ngAnimate'])
     };
   }]);
 ```
+Project Status
+==============
+
+Unfortunately I no longer work on UI projects and as such I don't have the time required to keep this project always up to date with the latest version of angular.  If you'd like, feel free to fork the repo and start making improvments.
+
+Thanks for your understanding.
